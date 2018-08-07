@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+	 
+
+	<div class="wpforms-container wpforms-container-full" id="wpforms-14">
+  <form class="form-horizontal" action="{{ url_for('printer') }}" method=post>
+     <div class="form-group"><label class="control-label col-sm-3" for="text">Dribbling:</label><input class="col-sm-8" type=text name=dribbling></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">Finishing:</label><input class="col-sm-8" type=text name=finishing></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">Short Passing:</label><input class="col-sm-8" type=text name=vision></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">Vision:</label><input class="col-sm-8" type=text name=short_passing></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">Marking:</label><input class="col-sm-8" type=text name=marking></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">Standing Tackle:</label><input class="col-sm-8" type=text name=standing_tackle></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">GK Diving:</label><input class="col-sm-8" type=text name=gk_diving></div>
+	 <div class="form-group"><label class="control-label col-sm-3" for="text">GK Reflexes:</label><input class="col-sm-8" type=text name=gk_reflexes></div>
+     <center><input class="btn btn-primary" type=submit value=Predict></center>
+</form>
+</div>
+
+{% endblock %}
